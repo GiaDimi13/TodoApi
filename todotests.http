@@ -1,0 +1,22 @@
+@BASE_URL=https://localhost:7183
+
+GET {{BASE_URL}}/todoitems
+User-Agent: rest-client
+Content-Type: application/json
+
+###
+
+POST {{BASE_URL}}/todoitems
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "name": "Make exercise",
+    "isComplete": false
+}
+
+###
+
+GET {{BASE_URL}}/todoitems/1
+User-Agent: rest-client
+Content-Type: application/json
